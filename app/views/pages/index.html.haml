@@ -6,3 +6,15 @@
       %h4 <-- Here will be slider with pictures from articles -->
 
     =link_to 'New Article', new_article_path, class: 'btn btn-default text-right'
+  .col-md-10.col-md-offset-1
+    - @articles.each do |art|
+      .row.index-art-list
+        .col-md-2
+          %p Photo will be here
+        .col-md-10
+          %h3.index-art-header
+            =art.title
+          %p.index-art-paragraph
+            =art.body
+          %p.art-date.text-right
+            =art.created_at.strftime("%Y-%m-%d")

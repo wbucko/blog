@@ -2,14 +2,14 @@ class ArticlesController < ApplicationController
   before_action :find_article, only: [:edit, :update, :destroy]
 
   def new
-    @aricle = Article.new
+    @article = Article.new
   end
 
   def create
-    @article = Article.create(article_params)
+    @article = Article.new(article_params)
     if @article.save
       flash[:success] = 'Article has been created.'
-      redirect_to @article
+      redirect_to root_path
     else
       flash[:danger] = "Something went wrong."
       render :new
@@ -17,17 +17,16 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(:id)
   end
 
   def update
-    @article = Article.find(:id)
     if @article.update(article_params)
+      binding.pry
       flash[:success] = 'Article has been updated.'
-      redirect_to @article
+      redirect_to root_path
     else
       flash[:danger] = "Something went wrong."
-      render :new
+      render :edit
     end
   end
 
@@ -40,7 +39,7 @@ class ArticlesController < ApplicationController
   private
 
   def find_article
-    @article = Article.find(:id)
+    @article = Article.find(params[:id])
   end
 
   def article_params
