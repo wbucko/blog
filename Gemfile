@@ -15,6 +15,7 @@ gem "haml-rails", "~> 0.9"
 gem 'simple_form'
 gem 'virtus'
 gem 'pry'
+gem 'carrierwave'
 
 group :development, :test do
   gem 'byebug'

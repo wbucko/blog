@@ -1,5 +1,7 @@
 class Article < ActiveRecord::Base
-  validates :title, :body, presence: true
+  validates :title, :body, :photo, presence: true
+
+  mount_uploader :photo, PhotoUploader
 
 
 

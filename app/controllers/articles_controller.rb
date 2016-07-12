@@ -21,7 +21,6 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      binding.pry
       flash[:success] = 'Article has been updated.'
       redirect_to root_path
     else
@@ -43,6 +42,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :body)
+    params.require(:article).permit(:title, :body, :photo)
   end
 end
