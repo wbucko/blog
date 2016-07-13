@@ -23,7 +23,7 @@ footer {
 }
 
 .index-art-list {
-  margin-top: 15px;
+  padding: 15px 0;
   border-bottom: 1px solid #ddd;
 }
 
@@ -32,7 +32,16 @@ footer {
 }
 
 .index-photo {
-  width: 100px;
-  height: 100px;
+  width: 100%;
   border-radius: 10px;
+
+  &--edit {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+}
+
+.img-wrapper {
+  overflow: hidden;
 }
