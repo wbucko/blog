@@ -9,12 +9,14 @@
   .col-md-10.col-md-offset-1
     - @articles.each do |art|
       .row.index-art-list
-        .col-md-3.img-wrapper.text-center
-          = image_tag art.photo, class: 'index-photo'
-        .col-md-9
-          %h3.index-art-header
-            = art.title
-          %p.index-art-paragraph
-            = art.body
-          %p.art-date.text-right
-            = art.created_at.strftime("%Y-%m-%d")
+        = link_to art do
+          .col-md-12.rounded
+            .col-md-3.img-wrapper.text-center
+              = image_tag art.photo, class: 'index-photo'
+            .col-md-9
+              %h3.index-art-header
+                = art.title
+              %p.index-art-paragraph
+                #{art.body[0..400]}...
+            %p.art-date.text-right
+              = art.created_at.strftime("%Y-%m-%d")

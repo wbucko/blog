@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :find_article, only: [:edit, :update, :destroy]
+  before_action :find_article, only: [:edit, :show, :update, :destroy]
 
   def new
     @article = Article.new
@@ -16,6 +16,9 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def show
+  end
+
   def edit
   end
 
@@ -25,7 +28,7 @@ class ArticlesController < ApplicationController
       redirect_to root_path
     else
       flash[:danger] = "Something went wrong."
-      render :edit
+      render :new
     end
   end
 
