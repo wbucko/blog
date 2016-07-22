@@ -3,8 +3,6 @@ $(document).ready(function($element){
   var autoswitch = false;
   var autoswitch_speed = 4000;
   var $sliderElement = $element.find('.slider-element');
-  var $active = $element.find('.active');
-  var $oldActive = $element.find('.oldActive');
   var $next = $element.find('.next');
   var $prev = $element.find('.prev');
 
