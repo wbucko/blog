@@ -6,6 +6,31 @@ body {
   margin: 15px 0;
   height: 300px;
   border: 1px solid #777;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  text-align: center;
+
+  img {
+    height: 300px;
+  }
+}
+
+.prev, .next {
+  margin-top: 125px;
+  position: relative;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.next {
+  float: right;
+  margin-left: -45px;
+}
+
+.prev {
+  float: left;
+  margin-right: -45px;
 }
 
 .text-right {
