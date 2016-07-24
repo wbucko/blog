@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'virtus'
 gem 'pry'
 gem 'carrierwave'
+gem "figaro"
 
 group :development, :test do
   gem 'byebug'

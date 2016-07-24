@@ -1,0 +1,11 @@
+.row
+  .col-md-8.col-md-offset-2
+    %h3.text-center Want to drop us a line? You can do it here!
+    = simple_form_for @message, url: messages_path do |f|
+      = f.input :email, placeholder: 'Your email adress'
+      //= f.input :body, placeholder: 'Feel free to write us whatever you like', input_html: { rows: 10 }
+      = f.label :body, '* Message', class: 'control-label required'
+      = f.input_field :body, as: :text, rows: 10, class: 'form-control', placeholder: 'Feel free to write us whatever you like'
+      .message_buttons
+        = f.button :submit, 'Send'
+        = link_to 'Back', :back, class: 'btn btn-default'
