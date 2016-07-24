@@ -1,7 +1,7 @@
 .row
   .col-md-12
     - flash.each do |message_type, message|
-      .alert{ class: "alert-#{message_type}" }
+      .alert{ class: "alert alert-#{message_type}" }
         = message
         %a.close{ "data-dismiss" => "alert"}
           &#215;

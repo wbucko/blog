@@ -18,6 +18,7 @@ gem 'virtus'
 gem 'pry'
 gem 'carrierwave'
 gem "figaro"
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'

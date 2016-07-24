@@ -2,11 +2,15 @@
 
 what need to be implemented:
 - Different roles for different user types (Reader, Redactor, Admin)
-- Form Object and Service for contact messages
-- Mailer for contact messages
 - Rake Tasks for mailer
 - Decent Exposure
 - Presenter or Decorator
 
 
+### DONE
+
+- jquery slider
+- form with simpleform gem for articles
+- Form Object and Service for contact messages
+- Mailer for contact messages
 
