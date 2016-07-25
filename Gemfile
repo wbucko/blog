@@ -20,6 +20,7 @@ gem 'carrierwave'
 gem "figaro"
 gem 'devise'
 gem 'decent_exposure', '3.0.0'
+gem "pundit"
 
 group :development, :test do
   gem 'byebug'

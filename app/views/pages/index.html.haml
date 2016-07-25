@@ -8,7 +8,8 @@
       - articles.each do |article|
         .slider-element
           =image_tag article.photo
-    = link_to 'New Article', new_article_path, class: 'btn btn-default text-right'
+    - if redactor?(current_user) || admin?(current_user)
+      = link_to 'New Article', new_article_path, class: 'btn btn-default text-right'
   .col-md-10.col-md-offset-1
     - articles.each do |art|
       .row.index-art-list

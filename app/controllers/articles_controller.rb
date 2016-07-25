@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   expose :article
+  before_action :authorize, only: [:create, :update, :destroy]
 
   def create
     if article.save
@@ -31,5 +32,9 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :body, :photo)
+  end
+
+  def authorize
+    authorize article
   end
 end

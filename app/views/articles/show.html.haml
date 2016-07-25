@@ -2,9 +2,10 @@
   .col-md-10.col-md-offset-1
     .text-center.img-show
       = image_tag article.photo
-    .show-buttons.text-right
-      = link_to 'Edit', edit_article_path(article), class: 'btn btn-info'
-      = link_to 'Delete', article_path(article), method: :delete, class: 'btn btn-danger'
+    - if redactor?(current_user) || admin?(current_user)
+      .show-buttons.text-right
+        = link_to 'Edit', edit_article_path(article), class: 'btn btn-info'
+        = link_to 'Delete', article_path(article), method: :delete, class: 'btn btn-danger'
     %p.art-date.text-left
       = article.created_at.strftime("%Y-%m-%d")
     %h3.index-art-header
