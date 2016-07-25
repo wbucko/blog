@@ -3,6 +3,7 @@
 what need to be implemented:
 - Rake Tasks for mailer
 - Presenter or Decorator
+- Specs
 
 
 ### DONE
