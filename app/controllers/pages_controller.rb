@@ -1,8 +1,4 @@
 class PagesController < ApplicationController
-  def index
-    @articles = Article.all
-  end
+  expose :articles, ->{ Article.all }
 
-  def contact
-  end
 end

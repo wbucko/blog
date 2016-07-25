@@ -5,12 +5,12 @@
     = image_tag 'arrow-left.png', class: 'prev'
     = image_tag 'arrow-right.png' , class: 'next'
     .slider
-      - @articles.each do |article|
+      - articles.each do |article|
         .slider-element
           =image_tag article.photo
     = link_to 'New Article', new_article_path, class: 'btn btn-default text-right'
   .col-md-10.col-md-offset-1
-    - @articles.each do |art|
+    - articles.each do |art|
       .row.index-art-list
         = link_to art do
           .col-md-12.rounded

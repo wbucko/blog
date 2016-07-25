@@ -3,7 +3,6 @@
 what need to be implemented:
 - Different roles for different user types (Reader, Redactor, Admin)
 - Rake Tasks for mailer
-- Decent Exposure
 - Presenter or Decorator
 
 
@@ -13,4 +12,4 @@ what need to be implemented:
 - form with simpleform gem for articles
 - Form Object and Service for contact messages
 - Mailer for contact messages
-
+- Decent Exposure
