@@ -14,3 +14,5 @@ what need to be implemented:
 - Mailer for contact messages
 - Decent Exposure
 - Different roles for different user types (Reader, Redactor, Admin)
+
+- showed git commit amend

@@ -24,10 +24,11 @@ gem "pundit"
 
 group :development, :test do
   gem 'byebug'
+  gem 'factory_girl'
+  gem 'faker'
 end
 
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-

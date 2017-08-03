@@ -3,7 +3,9 @@ class Article < ActiveRecord::Base
 
   mount_uploader :photo, PhotoUploader
 
-
+  # def long_title?
+  #   title.length > 5
+  # end
 
   # create_table "articles", force: :cascade do |t|
   #   t.string   "title"
