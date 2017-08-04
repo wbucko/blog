@@ -16,3 +16,5 @@ what need to be implemented:
 - Different roles for different user types (Reader, Redactor, Admin)
 
 - showed git commit amend
+
+- some shitty change
