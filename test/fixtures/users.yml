@@ -6,6 +6,6 @@
 #
 one: {}
 # column: value
-#
+# column
 two: {}
 #  column: value
